@@ -1,5 +1,3 @@
-# based and taken from https://gist.github.com/Vyryn/21bdfe0d3ec66baf62eeadc60fc6db41
-
 from __future__ import annotations
 
 import asyncio
