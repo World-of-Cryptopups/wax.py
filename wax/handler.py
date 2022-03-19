@@ -17,7 +17,10 @@ from wax.wrapper import EosJsonRpcWrapper
 
 class WaxHandler:
     def __init__(
-        self, account: EosAccount, endpoints: List[str], session: ClientSession
+        self,
+        account: EosAccount,
+        endpoints: List[str],
+        session: ClientSession | None = None,
     ) -> None:
         self.rpcs = [EosJsonRpcWrapper(i, ses=session) for i in endpoints]
         self.account = account
